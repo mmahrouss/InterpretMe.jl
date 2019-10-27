@@ -13,6 +13,7 @@ matrix:
 sudo: required
 before_install:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get update; sudo apt-get install python3-pip; python3 -m pip install --upgrade pip --user; python3 -m pip install sklearn --user; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then julia -e 'using Pkg; ENV["PYTHON"]=""; Pkg.add("PyCall"); Pkg.build("PyCall")' ; fi
 notifications:
   email: false
 after_success:
