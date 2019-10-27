@@ -12,7 +12,7 @@ matrix:
   fast_finish: true
 sudo: required
 before_install:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then pip install sklearn ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then pip3 install sklearn --user ; fi
 notifications:
   email: false
 after_success:
