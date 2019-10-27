@@ -4,7 +4,10 @@ using ScikitLearn
 using RDatasets
 using Test
 import PyCall
-PyCall.pyimport_conda("sklearn", "scikit-learn")
+try
+    PyCall.pyimport_conda("sklearn", "scikit-learn")
+catch
+    run(`/usr/bin/python3 -m pip install sklearn`)
 # Conda.add("scikit-learn")
 
 @sk_import linear_model: LogisticRegression
