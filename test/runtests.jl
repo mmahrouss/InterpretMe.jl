@@ -1,10 +1,10 @@
 using InterpretMe
-using Conda
+# using Conda
 using ScikitLearn
 using RDatasets
 using Test
-import PyCall
-PyCall.pyimport_conda("sklearn", "scikit-learn")
+# import PyCall
+# PyCall.pyimport_conda("sklearn", "scikit-learn")
 # Conda.add("scikit-learn")
 
 @sk_import linear_model: LogisticRegression
