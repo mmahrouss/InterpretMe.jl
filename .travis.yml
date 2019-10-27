@@ -10,6 +10,9 @@ matrix:
   allow_failures:
     - julia: nightly
   fast_finish: true
+sudo: required
+before_install:
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then pip install sklearn ; fi
 notifications:
   email: false
 after_success:
