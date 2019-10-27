@@ -12,9 +12,7 @@ matrix:
   fast_finish: true
 sudo: required
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install python3
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then pip3 install sklearn --user ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get update; sudo apt-get install python3-pip; pip3 install sklearn --user; fi
 notifications:
   email: false
 after_success:
