@@ -12,7 +12,7 @@ matrix:
   fast_finish: true
 sudo: required
 before_install:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then julia -e 'using Pkg; ENV["PYTHON"]=""; Pkg.add("PyCall"); fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then julia -e 'using Pkg; ENV["PYTHON"]=""; Pkg.add("PyCall")' ; fi
 notifications:
   email: false
 after_success:
