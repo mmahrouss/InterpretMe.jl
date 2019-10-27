@@ -1,7 +1,10 @@
 using InterpretMe
+using Conda
 using ScikitLearn
 using RDatasets
 using Test
+Conda.add("scikit-learn")
+
 @sk_import linear_model: LogisticRegression
 @sk_import inspection: partial_dependence
 
