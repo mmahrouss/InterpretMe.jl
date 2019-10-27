@@ -15,6 +15,7 @@ Conda = "8f4d0f93-b110-5947-807f-2305c1781a2d"
 RDatasets = "ce6b1742-4840-55fa-b093-852dadbb1d8b"
 ScikitLearn = "3646fa90-6ef7-5e7e-9f22-8aca16db6324"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
 
 [targets]
-test = ["Test", "ScikitLearn", "RDatasets", "Conda"]
+test = ["Test", "ScikitLearn", "RDatasets", "Conda", "PyCall"]
