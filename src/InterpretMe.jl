@@ -1,6 +1,5 @@
 module InterpretMe
 
-# greet() = print("Hello World!")
 include("pdp.jl")
-export partial_dependance
+export partial_dependence
 end # module
