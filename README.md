@@ -11,13 +11,6 @@ julia>]
 pkg> add InterpretMe
 ```
 
-Please note that the package is still a Work In Progress and has not been registered yet. Thus, for now you should install it as follows:
-
-```julia
-julia>]
-pkg> add https://github.com/mmahrouss/InterpretMe.jl
-```
-
 ## Example
 
 First import the package:
